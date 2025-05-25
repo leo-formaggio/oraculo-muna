@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(180deg, #DB8D1B 0%, #4C073D 100%);
+}
+
+@font-face {
+    font-family: "Luxerie";
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/Luxerie Display.woff') format('woff');
+}
+
+/* Palheta de cores Muna
+#4C073D (grape)
+#4C4339 (mousse)
+#E1DACF (light sand)
+#DB8D1B (laranja doce) */

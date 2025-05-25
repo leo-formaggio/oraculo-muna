@@ -1,0 +1,24 @@
+.container-logo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin: 30px auto;
+}
+
+.container-logo img {
+    width: 200px;
+    display: flex;
+}
+
+@media (min-width: 540px) {
+    .container-logo img {
+        margin-top: 20px;
+    }
+}
+
+/*#4C073D (grape)
+#4C4339 (mousse)
+#E1DACF (light sand)
+#DB8D1B (laranja doce) */
