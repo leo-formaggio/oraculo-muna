@@ -24,7 +24,7 @@ export function Popup() {
         try {
             setLoading(true)
             await addDoc(collection(db, "emails"), {
-                email,
+                email: JSON.stringify({ email }),
                 timestamp: new Date()
             })
 
