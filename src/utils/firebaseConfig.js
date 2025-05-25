@@ -17,6 +17,6 @@ const firebaseConfig = {
 }
 
 const app = initializeApp(firebaseConfig)
-const db = getFirestore(app, 'oraculo-muna')
+const db = getFirestore(app, '(default)')
 
 export { db, collection, addDoc }
