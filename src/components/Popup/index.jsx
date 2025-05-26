@@ -19,6 +19,9 @@ export function Popup() {
         if (!email || !email.includes('@')) {
             alert("Insira um e-mail válido.")
             return
+        } else {
+            localStorage.setItem('emailSent', email)
+            setShowPopup(false)
         }
 
         try {
@@ -28,8 +31,6 @@ export function Popup() {
                 timestamp: new Date()
             })
 
-            localStorage.setItem('emailSent', email)
-            setShowPopup(false)
         } catch (error) {
             // eslint-disable-next-line no-undef
             if (process.env.NODE_ENV !== 'production') {
