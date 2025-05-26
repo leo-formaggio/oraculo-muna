@@ -23,7 +23,7 @@ export function Popup() {
 
         try {
             setLoading(true)
-            await addDoc(collection(db, "emails"), {
+            await addDoc(collection(db, "(default)"), {
                 email,
                 timestamp: new Date()
             })
