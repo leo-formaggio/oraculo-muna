@@ -99,7 +99,7 @@ export function Cards() {
   return (
     <div className="container">
       <h2>Fase da Lua: {phaseName}</h2>
-        <p><i>Escolha a sua carta</i></p>
+        <p><i>Escolha a sua carta:</i></p>
         <Popup />
       <div className="cards">
         {[...Array(28)].map((_, i) => {

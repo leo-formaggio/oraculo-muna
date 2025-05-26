@@ -1,6 +1,6 @@
 .container {
     text-align: center;
-    margin: 55px auto;
+    margin: 40px auto;
 }
 
 .container h2 {
@@ -10,7 +10,7 @@
 }
 
 .container p {
-    margin: 50px 20px auto;
+    margin: 30px auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #e1dacf;
@@ -18,7 +18,7 @@
 
 .cards {
     display: flex;
-    margin-top: 50px;
+    margin-top: 40px;
     animation: fadeIn 1s ease-in-out;
     justify-content: center;
 }
