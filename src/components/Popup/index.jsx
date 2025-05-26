@@ -31,10 +31,7 @@ export function Popup() {
             localStorage.setItem('emailSent', email)
             setShowPopup(false)
         } catch (error) {
-            // eslint-disable-next-line no-undef
-            if (process.env.NODE_ENV !== 'production') {
-            console.log("Erro Firebase:", error);
-            }
+            console.error("Erro firebase!", error.code, error.message)
         } finally {
             setLoading(false)
         }
