@@ -19,23 +19,22 @@ export function Popup() {
         if (!email || !email.includes('@')) {
             alert("Insira um e-mail válido.")
             return
-        } else {
-            localStorage.setItem('emailSent', email)
-            setShowPopup(false)
         }
 
         try {
             setLoading(true)
-            await addDoc(collection(db, "(default)"), {
+            await addDoc(collection(db, "emails"), {
                 email,
                 timestamp: new Date()
             })
 
+            localStorage.setItem('emailSent', email)
+            setShowPopup(false)
         } catch (error) {
             // eslint-disable-next-line no-undef
             if (process.env.NODE_ENV !== 'production') {
             console.log("Erro Firebase:", error);
-}
+            }
         } finally {
             setLoading(false)
         }
