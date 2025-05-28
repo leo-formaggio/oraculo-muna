@@ -37,13 +37,14 @@
     font-family: "Montserrat", sans-serif;
   }
 
-  .tx-email {
+  /* .tx-email {
     color: #333;
     font-family: "Montserrat", sans-serif;
-  }
+  } */
 }
 
 .popup input {
+  margin-top: 20px;
   padding: 8px;
   width: 85%;
   border: 1px solid #e1dacf;

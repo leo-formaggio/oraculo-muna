@@ -43,7 +43,7 @@ export function Popup() {
             <div className="popup-overlay">
                 <div className="popup">
                     <h3>Bem-vinda!</h3>
-                    <p className='tx-email'>Antes de tirar a sua carta...</p>
+                    {/* <p className='tx-email'>Antes de tirar a sua carta...</p> */}
                     <input 
                         type="email"
                         placeholder="seuemail@exemplo.com"
