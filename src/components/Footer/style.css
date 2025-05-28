@@ -1,0 +1,38 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fade ease-in 3s;
+
+    .footer-text {
+        position: absolute;
+        bottom: 15px;
+        text-align: center;
+    }
+
+    p {
+        
+        font-family: "Montserrat", sans-serif;
+        font-size: 10px;
+        color: #e1dacf;
+    }
+
+    a {
+        text-decoration: none;
+        color: #e1dacf;
+    }
+
+    a:hover {
+        color: #9c9790;
+    }
+
+}
+
+@keyframes fade {
+    from {
+    opacity: 0;
+  }
+    to {
+    opacity: 1;
+  }
+}

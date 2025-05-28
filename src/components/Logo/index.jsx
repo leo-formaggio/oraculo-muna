@@ -1,13 +1,13 @@
-import imageMuna from '../../assets/LOGO PARA ORACULO.png'
+import imageLogo from '../../assets/logo-orac-muna.png'
 import './styles.css'
 
 export function Logo() {
 
     return (
         <div className='container-logo'>
-            <img src={imageMuna} alt="Logotipo Muna" />
+            <img 
+                src={imageLogo} alt="Logotipo Muna" 
+            />
         </div>
     )
 }
-
-// oraculo.portalmuna.com

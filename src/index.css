@@ -17,6 +17,21 @@ body {
     src: url('fonts/Luxerie Display.woff') format('woff');
 }
 
+@font-face {
+  font-family: "Gotham thin";
+  src: url('fonts/Gotham-Thin.otf') format('woff');
+}
+
+@font-face {
+  font-family: "Gotham book";
+  src: url('fonts/Gotham-Book.otf') format('woff');
+}
+
+@font-face {
+  font-family: "Gotham light";
+  src: url('fonts/Gotham-Light.otf') format('woff');
+}
+
 /* Palheta de cores Muna
 #4C073D (grape)
 #4C4339 (mousse)
