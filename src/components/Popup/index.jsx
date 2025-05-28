@@ -43,12 +43,13 @@ export function Popup() {
             <div className="popup-overlay">
                 <div className="popup">
                     <h3>Bem-vinda!</h3>
-                    <p className='tx-email'>Insira seu email</p>
+                    <p className='tx-email'>Antes de tirar a sua carta...</p>
                     <input 
                         type="email"
                         placeholder="seuemail@exemplo.com"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
+                        required
                     />
                     <button 
                         onClick={handleEmailSubmit} 
