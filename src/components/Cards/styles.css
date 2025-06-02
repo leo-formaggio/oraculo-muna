@@ -18,7 +18,7 @@
 
 .cards {
     display: flex;
-    margin-top: 40px;
+    margin-top: 80px;
     animation: fadeIn 1s ease-in-out;
     justify-content: center;
 }
@@ -142,15 +142,13 @@
 }
 
 /* @media (min-width:650px) {
-    .container h2 {
-        margin-top: -55px;
-    }
-    .cards {
-        transform: scale(1.1);
+    body {
+        scale: 1.2;
+        margin-top: 150px;
     }
 } */
 
-.copy-button {
+/* .copy-button {
     margin-top: 185px;
     padding: 4px 8px;
     font-size: 16px;
@@ -178,12 +176,12 @@
     background-color: #e1dacf;
     color: #4C073D;
     animation: fadeInOut 2.5s;
-}
+} */
 
-@keyframes fadeInOut {
+/* @keyframes fadeInOut {
     0% { opacity: 0.2; }
     10% { opacity: 0.4; }
     50% {opacity: 0.6;}
     90% { opacity: 0.3; }
     100% { opacity: 0.1; }
-}
+} */

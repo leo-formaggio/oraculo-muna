@@ -4,29 +4,26 @@
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-color: rgba(0,0,0,0.5); */
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 150px;
+  padding-top: 140px;
   z-index: 1000;
-  animation: fade 0.7s ease-in-out;
+  animation: fade 0.3s ease-in-out;
 }
 
 @keyframes fade {
   from {
     opacity: 0;
-    transform: translateY(-300px);
   }
   to {
     opacity: 1;
-    transform: translateY(1);
   }
 }
 
 .popup {
   background: #f4f4f4;
-  padding: 32px;
+  padding: 42px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.3);
   max-width: 350px;
