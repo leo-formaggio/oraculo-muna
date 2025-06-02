@@ -18,7 +18,7 @@
 
 .cards {
     display: flex;
-    margin-top: 80px;
+    margin-top: 65px;
     animation: fadeIn 1s ease-in-out;
     justify-content: center;
 }
