@@ -5,9 +5,9 @@ export function Logo() {
 
     return (
         <div className='container-logo'>
-            <img 
-                src={imageLogo} alt="Logotipo Muna" 
-            />
+            <a href="https://portalmuna.com/" target="_blank">
+                <img src={imageLogo} alt="Logotipo Muna" />
+            </a>
         </div>
     )
 }

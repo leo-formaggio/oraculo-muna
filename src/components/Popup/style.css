@@ -66,3 +66,14 @@
   transition: 0.3s;
   background: #7d056b;
 }
+
+.my-popup {
+  border-radius: 12px;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  scale: 0.6;
+}
+
+.my-title {
+  font-family: 'Montserrat', sans-serif;
+}

@@ -6,9 +6,20 @@
     justify-content: center;
 }
 
-.container-logo img {
+.container-logo a img {
     display: flex;
     width: 200px;
+    cursor: pointer;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @media (min-width: 540px) {

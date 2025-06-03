@@ -1,5 +1,6 @@
 import { db, collection, addDoc } from '../../utils/firebaseConfig'
 import { useEffect, useState } from 'react'
+import Swal from 'sweetalert2'
 import './style.css'
 
 export function Popup() {
@@ -17,7 +18,19 @@ export function Popup() {
 
     const handleEmailSubmit = async () => {
         if (!email || !email.includes('@')) {
-            alert("Insira um e-mail válido.")
+            // alert("Insira um e-mail válido.")
+            Swal.fire({
+                icon: 'warning',
+                title: 'Oops...',
+                text: 'Insira um e-mail válido!',
+                position: 'top',
+                background: '#f4f4f4',
+                confirmButtonColor: '#4C073D',
+                customClass: {
+                    popup: 'my-popup',
+                    title: 'my-title'
+                }
+            })
             return
         }
 
@@ -31,7 +44,14 @@ export function Popup() {
             localStorage.setItem('emailSent', email)
             setShowPopup(false)
         } catch (error) {
-            console.error("Erro firebase!", error.code, error.message)
+            console.log(error.code, error.message)
+            Swal.fire({
+                icon: 'error',
+                title: 'Erro ao salvar',
+                text: 'Tente novamente mais tarde.',
+                position: 'top',
+                background: '#f4f4f4'
+            })
         } finally {
             setLoading(false)
         }
