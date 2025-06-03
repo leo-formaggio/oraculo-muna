@@ -312,7 +312,7 @@ export function Cards() {
 
 // Exemplo de uso:
 const lunarCycleDays = 29.53
-const day = lunarCycleDays - 0.33
+const day = lunarCycleDays - 0.93
 const moonPhase = day; // Fase atual
 const weekDay = getNextPhaseChangeDate(moonPhase);
 console.log("Próxima fase muda na:", weekDay);

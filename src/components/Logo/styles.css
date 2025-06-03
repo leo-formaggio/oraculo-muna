@@ -1,15 +1,14 @@
 .container-logo {
     display: flex;
     flex-direction: column;
+    margin: 10px auto;
     text-align: center;
     justify-content: center;
-    margin: 0 auto;
-    margin: 10px auto;
 }
 
 .container-logo img {
-    width: 200px;
     display: flex;
+    width: 200px;
 }
 
 @media (min-width: 540px) {

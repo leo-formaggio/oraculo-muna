@@ -5,8 +5,8 @@
     animation: fade ease-in 3s;
 
     .footer-text {
-        position: absolute;
         bottom: 15px;
+        position: absolute;
         text-align: center;
     }
 
