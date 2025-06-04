@@ -16,6 +16,33 @@
     color: #e1dacf;
 }
 
+.btn-container {
+    display: flex;
+    position: fixed;
+    left: 49.5%;
+    bottom: 40px;
+    animation: fadeIn 7s ease-in;
+
+    .btn-whats {
+        display: flex;
+
+        img {
+            display: flex;
+            width: 20px;
+            cursor: pointer;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .cards {
     display: flex;
     justify-content: center;

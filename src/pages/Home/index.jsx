@@ -13,5 +13,3 @@ export function Home() {
     </div>
   )
 }
-
-// oraculo.portalmuna.com

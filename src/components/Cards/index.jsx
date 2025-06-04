@@ -1,6 +1,8 @@
+import WhatsImage from '../../assets/paper-plane-tilt.png'
+import { WhatsappShareButton } from "react-share"
 import { useEffect, useState } from "react"
-import { phase } from "lune"
 import { Popup } from "../Popup"
+import { phase } from "lune"
 import './styles.css'
 
 const allCards = [
@@ -318,6 +320,10 @@ const weekDay = getNextPhaseChangeDate(moonPhase);
 console.log("Próxima fase muda na:", weekDay);
 // Fim da função de verificação das fases da lua
 
+  const pageUrl = window.location.href
+  const message = 'Lembrei de você!'
+
+
   return (
     <div className="container">
       <h2>Fase da Lua: {phaseName}</h2>
@@ -368,6 +374,15 @@ console.log("Próxima fase muda na:", weekDay);
         })
         }
         </div>
+          <div className="btn-container">
+            {revealed && selectedCard && (
+            <div className="btn-whats">
+              <WhatsappShareButton url={pageUrl} title={message}>
+                <img src={WhatsImage} />
+              </WhatsappShareButton>
+            </div>
+          )}
+          </div>
     </div>
   )
 }
