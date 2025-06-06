@@ -8,6 +8,7 @@ body {
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(180deg, #DB8D1B 0%, #4C073D 100%);
+  flex-wrap: wrap;
 }
 
 @font-face {
