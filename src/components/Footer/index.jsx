@@ -6,9 +6,9 @@ export function Footer() {
         <div className='footer-container'>
             <div className='footer-text'>
                 <p>
-                    © 2025 Portal Muna - All Rights Reserved by <span></span>
+                    © 2025 All Rights Reserved - Portal Muna by <span></span>
                         <a 
-                            href="https://github.com/leo-formaggio" 
+                            href="https://page.moodcodelab.com/" 
                             target='_blank'>
                                 MCL
                         </a>

@@ -314,7 +314,7 @@ export function Cards() {
 
 // Exemplo de uso:
 const lunarCycleDays = 29.53
-const day = lunarCycleDays - 0.93
+const day = lunarCycleDays - 3
 const moonPhase = day; // Fase atual
 const weekDay = getNextPhaseChangeDate(moonPhase);
 console.log("Próxima fase muda na:", weekDay);
@@ -342,17 +342,21 @@ console.log("Próxima fase muda na:", weekDay);
                 <div className="card-back">
                   <div className="text-card">
                     <h3 className="text-title">
-                    {selectedCard?.title}
-                  </h3>
-                  <p className="text-message">
-                    {selectedCard?.message}
-                  </p>
-                  <h4 className="text-subtitle">
-                    {selectedCard?.text}
-                  </h4>
-                  <p className="text-social">
-                    {selectedCard?.insta}
-                  </p>
+                      {selectedCard?.title}
+                    </h3>
+                    <p className="text-message">
+                      {selectedCard?.message}
+                    </p>
+                    <h4 className="text-subtitle">
+                      {selectedCard?.text}
+                    </h4>
+                    <p className="text-social">
+                      <a 
+                        href="https://www.instagram.com/portalmuna/" 
+                        target='_blank'>
+                        {selectedCard?.insta}
+                      </a>
+                    </p>
                   </div>
                 </div>
                   {/* {flippedIndex === i && (
