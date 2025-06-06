@@ -30,7 +30,7 @@
 
 @media screen and (min-width: 960px) and (max-width: 1370px) {
     .container-logo {
-        margin: -15px auto;
+        margin: 0 auto;
         scale: 0.8;
     }
 }
