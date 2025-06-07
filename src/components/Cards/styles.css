@@ -126,14 +126,15 @@
     padding: 5px;
 
     .text-card {
-        margin-top: 20px;
+        /* margin-top: 20px; */
+        margin-top: -10px; /* Add para puxar o titulo mais pra borda superior */
     }
 
     .text-title {
         font-family: "Gotham light", sans-serif;
-        font-size: 0.658em;
+        font-size: 0.668em;
         color: #4C073D;
-        margin: -15px auto;
+        margin: -20px auto;
     }
 
     .text-message {
@@ -152,8 +153,11 @@
     .text-social {
         font-family: "Gotham book", sans-serif;
         font-size: 0.375em;
-        margin-bottom: 2px;
+        margin-bottom: 1px;
         color: #4C073D;
+        position: fixed; /* Add para corrigir rodapé da carta e posição dos textos */
+        left: 33%; /* Add para correção */
+        bottom: 2px; /* Add para correção */
 
         a {
             text-decoration: none;
